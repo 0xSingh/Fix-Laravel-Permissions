@@ -1,3 +1,5 @@
+# Fix Laravel Permissions
+
 ## Group Ownership:
 It changes the group ownership to www-data, assuming the user can still be the local user.
 
@@ -8,13 +10,7 @@ It changes the group ownership to www-data, assuming the user can still be the l
 
 
 ## Usage Instructions
-Make the Script Executable:
-
+You can run it remotely:
 ```bash
-chmod +x laravel-permissions-setup.sh
-```
-Run the Script with Sudo:
-
-```bash
-sudo ./laravel-permissions-setup.sh
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/0xSingh/Fix-Laravel-Permissions/main/run.sh)"
 ```
